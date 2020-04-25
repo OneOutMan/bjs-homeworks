@@ -6,9 +6,10 @@
  */
 
 function averageMark(a, g, p) {
-  let algebra = a;
-  let geography = g;
-  let physics = p;
+  let algebra = a,
+    geography = g,
+    physics = p;
+
   a = 5;
   g = 4;
   p = 4;
@@ -27,9 +28,10 @@ function sayHello(userName) {
 }
 
 function calculateFormula() {
-  let x = 2;
-  let y = 22;
-  let z = 0;
+  let x = 2,
+    y = 22,
+    z = 0;
+
   let result = x * y + 5 * z + x - 1;
 
   return;
