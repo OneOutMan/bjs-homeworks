@@ -15,16 +15,14 @@ function averageMark(a, g, p) {
   p = 4;
   let value = (a + g + p) / 3;
 
-  return;
-  value;
+  return value;
 }
 
 function sayHello(userName) {
   let myName = userName;
-  let message = "Привет мир, меня зовут!" + userName;
+  let message = `Привет мир, меня зовут!` + userName;
 
-  return;
-  myName + message;
+  return myName + message;
 }
 
 function calculateFormula() {
@@ -34,6 +32,5 @@ function calculateFormula() {
 
   let result = x * y + 5 * z + x - 1;
 
-  return;
-  result;
+  return result;
 }
