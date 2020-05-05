@@ -20,9 +20,11 @@ function averageMark(a, g, p) {
 
 function sayHello(userName) {
   let myName = userName;
-  let message = `Привет мир, меня зовут!` + userName;
+  let message = console.log(`привет, Мир! Меня зовут ${myName}`);
 
-  return myName + message;
+  let valTwo = myName + message;
+
+  return new;
 }
 
 function calculateFormula() {
