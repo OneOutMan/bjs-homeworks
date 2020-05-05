@@ -5,11 +5,12 @@ function getResult(a, b, c) {
   if (D < 0) {
     return [];
   } else if (D == 0) {
-    let x1 = ((Math.pow(-b, 2) + D) / 2) * a;
+    let x1 = ((Math.sqrt(-b, 2) + D) / 2*a;
     return [x1];
-  } else if (D > 0) {
-    let x1 = ((Math.pow(-b, 2) - D) / 2) * a;
-    let x2 = ((Math.pow(-b, 2) + D) / 2) * a;
+  }
+   else if (D > 0) {
+    let x1 = ((Math.sqrt(-b, 2) - D) / 2*a;
+    let x2 = ((Math.sqrt(-b, 2) + D) / 2*a;
     return [x1, x2];
   }
 }
@@ -36,14 +37,10 @@ function askDrink(name, dateOfBirthday) {
     ageTwo = now.getFullYear() - dateOfBirthday.getFullYear();
 
   if (ageTwo < 18) {
-    let verOne = alert(
-      "Сожалею, " +
-        name +
-        " но я не могу вам продать алкоголь. Зато могу предложить вам замечательный клюквенный компот!"
+    return `извините ${name} еще рано`;
     );
-    return verOne;
-  } else if (ageTwo >= 18) {
-    let verTwo = alert("Не желаете ли олд-фэшн, " + name + "?");
-    return verTwo;
+   }
+   else if (ageTwo >= 18) {
+    return `Не желаете ли олд-фэшн, ${name} ?`;
   }
 }
