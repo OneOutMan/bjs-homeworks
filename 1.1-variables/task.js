@@ -20,11 +20,10 @@ function averageMark(a, g, p) {
 
 function sayHello(userName) {
   let myName = userName;
-  let message = console.log(`привет, Мир! Меня зовут ${myName}`);
-
-  let valTwo = myName + message;
-
-  return new;
+  let message = `привет, Мир! Меня зовут ${myName}`;
+  let newValue = MyName + message;
+  return newValue;
+  // можно было и так = return myName + message; зачем добавлять было 24 строку?о_О я её сделал следовав пунктам задания
 }
 
 function calculateFormula() {
