@@ -58,17 +58,18 @@ getAverageScore({
   french: [5, 5],
 });
 
-function getPersonData(secretData) {
-  function getDecodedValue(secret) {
-    if (secret == 0) {
-      return "Радриго";
-    } else if (secret == 1) {
-      return "Эмильо";
-    }
+function getDecodedValue(secret) {
+  if (secret == 0) {
+    return "Родриго";
+  } else if (secret == 1) {
+    return "Эмильо";
   }
+}
+
+function getPersonData(secretData) {
   return {
-    firstname: getDecodedValue(secretData.aaa),
-    lastname: getDecodedValue(secretData.bbb),
+    firstName: getDecodedValue(secretData.aaa),
+    lastName: getDecodedValue(secretData.bbb),
   };
 }
 
