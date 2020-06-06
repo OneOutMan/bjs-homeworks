@@ -12,7 +12,24 @@ function getSolutions(a, b, c) {
     return { D, roots: [x1, x2] };
   }
 }
+
+function showSolutionsMessage(a, b, c) {
+  let result = getSolutions(a, b, c);
+  console.log(`Вычисляем корни квадратного уравнения ${a}x² + ${b}x + ${c}`);
+  console.log(`Значение дискриминанта: D + ${result.D}`);
+  if (result.D < 0) {
+    console.log("Уравнение не имеет вещественных корней");
+  } else if (result.D === 0) {
+    console.log(`Уравнение имеет один корень X₁ = ${result.x1}`);
+  } else if (result.D > 0) {
+    console.log(
+      `Уравнение имеет два корня. X₁ = ${result.x1}, X₂ = ${result.x2}`
+    );
+  }
+}
+
 getSolutions();
+showSolutionsMessage();
 
 function getAverageMark(marks) {
   if (marks.length == 0) {
