@@ -1,7 +1,5 @@
 "use strict";
 function calculateTotalMortgage(percent = 0, contribution, amount = 0, date) {
-  let mounth = (Date.parse(date) - Date.now()) / 2592000000;
-
   if (
     typeof percent === "number" &&
     typeof contribution === "number" &&
@@ -20,12 +18,6 @@ calculateTotalMortgage();
 
 function getGreeting(name) {
   if (name == "Пётр") {
-    console.log("Привет, мир! Меня зовут Пётр.");
-  } else if (name == "") {
-    name = "Аноним";
-    console.log("Привет, мир! Меня зовут Аноним");
-  } else if (name == null) {
-    name = "Аноним";
-    console.log("Привет, мир! Меня зовут Аноним");
+    return `Привет, мир! Меня зовут ${name || "Аноним"}`;
   }
 }
